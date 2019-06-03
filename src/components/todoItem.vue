@@ -3,13 +3,14 @@
 </template>
 <script>
 export default {
-  props:{
-    item:String,
-    index:Number
+  props: {
+    item: String,
+    id: Number,
+    index: Number
   },
-  methods:{
-    fn1(){
-      this.$emit('abc',this.index)
+  methods: {
+    fn1 () {
+      this.$emit('abc', this.index, this.id)
     }
   }
 }
@@ -17,6 +18,3 @@ export default {
 <style lang="scss" scoped>
 
 </style>
-
-
-
